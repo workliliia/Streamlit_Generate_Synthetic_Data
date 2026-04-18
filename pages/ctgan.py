@@ -10,7 +10,7 @@ from sklearn.preprocessing import MinMaxScaler
 from scipy.stats import ks_2samp, wasserstein_distance
 
 
-st.set_page_config(page_title="Wind Tunnel CTGAN Generator", layout="wide")
+st.set_page_config(page_title="CTGAN Generator", layout="wide")
 
 # constants
 FLAP_LEVELS = ['0', '5', '10', '15']
@@ -431,7 +431,7 @@ print_every = st.sidebar.selectbox("Status Update Frequency", [50, 100, 200, 250
 
 
 # main GUI
-st.title("Wind Tunnel Data Generator - CTGAN Streamlit GUI")
+st.title("CTGAN Generator")
 st.write("Upload the `WindTunnelData.csv` file, train the CTGAN-style model, and generate synthetic wind tunnel data.")
 
 uploaded_file = st.file_uploader("Upload WindTunnelData CSV", type=["csv"])

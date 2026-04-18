@@ -9,7 +9,7 @@ from sklearn.preprocessing import MinMaxScaler
 from scipy.stats import ks_2samp, wasserstein_distance
 
 
-st.set_page_config(page_title="Wind Tunnel WGAN Generator", layout="wide")
+st.set_page_config(page_title="WGAN Generator", layout="wide")
 
 # constants
 FLAP_LEVELS = ['0', '5', '10', '15']
@@ -388,7 +388,7 @@ seed = st.sidebar.number_input("Random Seed", min_value=1, max_value=9999, value
 print_every = st.sidebar.selectbox("Status Update Frequency", [50, 100, 200, 250, 500], index=3)
 
 # main GUI
-st.title("Wind Tunnel Data Generator - Streamlit GUI")
+st.title("WGAN Generator")
 st.write("Upload the `WindTunnelData.csv` file, train the model, and generate synthetic wind tunnel data.")
 
 uploaded_file = st.file_uploader("Upload WindTunnelData CSV", type=["csv"])

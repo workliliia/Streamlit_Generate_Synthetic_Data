@@ -9,7 +9,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from scipy.stats import ks_2samp, wasserstein_distance
 
-st.set_page_config(page_title="WGAN + XGBoost-like Prediction", layout="wide")
+st.set_page_config(page_title="WGAN + XGBoostPrediction", layout="wide")
 
 # constants
 FLAP_LEVELS = ['0', '5', '10', '15']
