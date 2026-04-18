@@ -15,5 +15,4 @@ st.markdown("""
 - WGAN + Decision Tree
 - WGAN + SVR
 - WGAN + XGBoost
-- CTGAN + XGBoost
 """)
